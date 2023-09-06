@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* ---- h1-h6 ---- */
+h1, h2 {
+  text-align: center;
+  padding: 10px;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+}
+
+
+/* ---- Anchor styling ---- */
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+a:visited {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+
+/* ---- GitHub and Roblox button ---- */
+.github {
+  display: flex;
+  width: 40%;
+  margin: 0 0 0 30%;
+  justify-items: center;
+}
+
+.github div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease-out;
+  width: 100%;
+}
+
+.github div:hover {
+  background-color: #555;
+  box-shadow: 0px 0px 10px 5px #2d2d2d;
+}
+
+.roblox {
+  display: flex;
+  width: 40%;
+  margin: 0 0 0 30%;
+  justify-items: center;
+}
+
+.roblox div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease-out;
+  width: 100%;
+}
+
+.roblox div:hover {
+  background-color: #555;
+  box-shadow: 0px 0px 10px 5px #2d2d2d;
+}
+
+
+/* ---- Contact buttons styling ---- */
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 50%;
+  margin: 0 0 0 25%;
+  justify-items: center;
+}
+
+.contact-links div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease-out;
+  width: 100%;
+}
+
+.contact-links div:hover {
+  background-color: #555;
+  box-shadow: 0px 0px 10px 5px #2d2d2d;
+}
+
+
+
+/* ---- Nav + footer styling (dark background pill design with blurred shadow ---- */
+nav, footer {
+  background-color: #111;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px 5px #2d2d2d;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-out;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+
+
+/* ---- Use of sections for blur when not in use + parallax scrolling effect ---- */
+#sections-wrapper {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.6s ease;
+}
+
+section {
+  flex: 0 0 100%;
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  transition: filter 0.7s ease-out;
+}
+
+section:not(.active) {
+  filter: blur(15px);
+  text-shadow:1px 1px 30px #111;
+}
+
